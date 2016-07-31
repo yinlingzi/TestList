@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Test_listView</string>
+    <string name="spin_title">事物归属</string>
+    <string-array name="data">
+        <item>个人事物</item>
+        <item>公司事物</item>
+    </string-array>
     <string-array name="select_url">
         <item>1</item>
         <item>2</item>

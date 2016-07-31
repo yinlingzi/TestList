@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".SetClockActivity">
         </activity>
+        <activity android:name=".SetTarget">
+        </activity>
     </application>
 
 </manifest>

@@ -19,10 +19,6 @@ import android.widget.Toast;
 import com.example.administrator.test_listview.MainActivity;
 
 import java.util.ArrayList;
-
-/**
- * Created by Jay on 2015/9/25 0025.
- */
 public class MyBaseExpandableListAdapter extends BaseExpandableListAdapter  {
 
 
@@ -93,7 +89,11 @@ public class MyBaseExpandableListAdapter extends BaseExpandableListAdapter  {
         groupHolder.tv_group_button_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext, "你点击了增加" , Toast.LENGTH_SHORT).show();
+                Intent i =new Intent(mContext,SetTarget.class);
+                mContext.startActivity(i);
+
+
+                //Toast.makeText(mContext, "你点击了增加" , Toast.LENGTH_SHORT).show();
             }
         });
         return convertView;

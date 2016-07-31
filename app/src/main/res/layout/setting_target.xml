@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:id="@+id/setting_target_title_text"
+            android:textSize="20dp"
+            android:padding="4dp"
+            android:hint="事情主题..."
+            android:textColorHint="#FF807580"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/btnprivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人事物"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/btnpublic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公司事物"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/setting_target_content_text"
+        android:hint="详情..."
+        android:textSize="16dp"
+        android:padding="4dp"
+        android:textColorHint="#FF807580"
+        />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:text="保存"
+    android:background="#ffffff"
+    android:id="@+id/setting_target_saved_btn"
+    />
+
+
+
+
+</LinearLayout>
